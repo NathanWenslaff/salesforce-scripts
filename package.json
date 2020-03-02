@@ -2,11 +2,11 @@
     "name": "salesforce-scripts",
     "version": "1.0.0",
     "scripts": {
-        "log:delete": "node ./scripts/node/deleteApexLogs.js",
-        "debugMode:enable": "node ./scripts/node/debugMode.js -e",
-        "debugMode:disable": "node ./scripts/node/debugMode.js -d",
-        "debugSetup:save": "node ./scripts/node/createTraceFlags.js -s",
-        "debugSetup:default": "node ./scripts/node/createTraceFlags.js -d"
+        "log:delete": "node ./scripts/deleteApexLogs.js",
+        "debugMode:enable": "node ./scripts/debugMode.js -e",
+        "debugMode:disable": "node ./scripts/debugMode.js -d",
+        "debugSetup:save": "node ./scripts/createTraceFlags.js -s",
+        "debugSetup:default": "node ./scripts/createTraceFlags.js -d"
     },
     "devDependencies": {
         "jsforce": "^1.9.3",

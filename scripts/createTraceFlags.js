@@ -5,8 +5,8 @@ const { auth } = require('./scriptUtils');
 
 const conn = auth();
 
-if (!fs.existsSync('./scripts/node/defaults.json')) {
-    fs.writeFileSync('./scripts/node/defaults.json', JSON.stringify({ users: [], classes: [] }));
+if (!fs.existsSync('./scripts/defaults.json')) {
+    fs.writeFileSync('./scripts/defaults.json', JSON.stringify({ users: [], classes: [] }));
 }
 
 const defaults = require('./defaults.json');
@@ -173,7 +173,7 @@ const createTraceFlags = async (users, classes) => {
             users: users.map((user) => user.Name),
             classes: classes.map((apexClass) => apexClass.Name),
         };
-        fs.writeFileSync('./scripts/node/defaults.json', JSON.stringify(newDefaults));
+        fs.writeFileSync('./scripts/defaults.json', JSON.stringify(newDefaults));
         console.log('Saved these choices as your defaults');
     }
 };

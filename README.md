@@ -14,13 +14,17 @@ This will delete all Apex logs in your default org.
 npm run debugMode:enable
 ```
 
-This will query for users in your org that have debug mode disabled. Then it will prompt you to select which users you want to enable debug mode for.
+1. It will query for users in your org that have debug mode **disabled**.
+2. It will prompt you to select which users you want to **enable** debug mode for.
 
 ```
 npm run debugMode:disable
 ```
 
-This will query for users in your org that have debug mode enabled. Then it will prompt you to select which users you want to disable debug mode for.
+1. It will query for users in your org that have debug mode **enabled**.
+2. It will prompt you to select which users you want to **disable** debug mode for.
+
+Note: These scripts allow you to programmatically enable/disable debug mode for Guest Users, something that can't be done through the Salesforce UI.
 
 ## Set Up Trace Flags
 
